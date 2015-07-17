@@ -33,5 +33,6 @@ export default {
 		this.options = $.extend(true, {}, this.defaults, options);
 		this.setIsTouchDevice();
 		this.addClasses();
+		$el.data('bsp-useragent', this);
 	}
 };
