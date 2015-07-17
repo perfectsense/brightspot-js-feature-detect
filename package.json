@@ -1,0 +1,20 @@
+{
+  "author": {
+    "url": "http://www.perfectsensedigital.com/",
+    "name": "Perfect Sense Digital"
+  },
+  "devDependencies": {
+    "babel-core": "^5.6.14",
+    "es6-module-loader": "0.16.6",
+    "express": "^4.13.1",
+    "systemjs": "^0.18.3"
+  },
+  "homepage": "https://github.com/perfectsense/brightspot-js-useragent",
+  "keywords": [
+    "brightspot",
+    "jquery"
+  ],
+  "license": "MIT",
+  "name": "bsp-useragent",
+  "version": "0.0.1"
+}

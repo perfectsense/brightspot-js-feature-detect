@@ -1,0 +1,25 @@
+{
+  "authors": [
+    {
+      "homepage": "http://www.perfectsensedigital.com/",
+      "name": "Perfect Sense Digital"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.7.0",
+    "bsp-utils": ">=1.0.0"
+  },
+  "homepage": "https://github.com/perfectsense/brightspot-js-useragent",
+  "ignore": ["demo","Gruntfile.js","package.json",".gitignore"],
+  "keywords": [
+    "brightspot",
+    "jquery"
+  ],
+  "license": "MIT",
+  "main": [
+    "src/js/bsp-useragent.js",
+    "src/js/bsp-useragent-plugin.js"
+  ],
+  "name": "bsp-useragent",
+  "version": "0.0.1"
+}
