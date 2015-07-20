@@ -3,37 +3,33 @@
 	<head>
 		<title>useragent demo</title>
 		<style>
-		.yes, .no {
-			font-weight: bold;
-		}
-		.yes {
-			color: green;
-		}
-		.no {
-			color: red;
-		}
-		.touch .touch-yes,
-		.no-touch .touch-no {
-			display: block;
-		}
-		.touch .touch-no,
-		.no-touch .touch-yes {
-			display: none;
-		}
+			/** https://www.lullabot.com/articles/importing-css-breakpoints-into-javascript */
+			body:before {
+			  content: "smartphone";
+			  display: none; /* Prevent from displaying. */
+			}
+			@media (min-width: 700px) {
+			  body:before {
+			    content: "tablet";
+			  }
+			}
+			@media (min-width: 1100px) {
+			  body:before {
+			    content: "desktop";
+			  }
+			}
 		</style>
 	</head>
 	<body>
 
 		<h1>useragent demo</h1>
-
-		<h2>isTouchDevice</h2>
-		<div class="yes touch-yes">yes</div>
-		<div class="no touch-no">no</div>
+		<div id="output"></div>
 
 		<script src="/assets/node/systemjs/dist/system.js"></script>
 		<script src="config.js"></script>
 		<script>
-			System.import('/assets/js/bsp-useragent-plugin');
+			System.import('/assets/js/bsp-useragent');
+			System.import('tests');
 		</script>
 
 	</body>
