@@ -1,4 +1,4 @@
-# brightspot-js-useragent
+# brightspot-feature-detect
 
 demo requires http, express included, run from repo root:
 

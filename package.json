@@ -9,12 +9,12 @@
     "express": "^4.13.1",
     "systemjs": "^0.18.3"
   },
-  "homepage": "https://github.com/perfectsense/brightspot-js-useragent",
+  "homepage": "https://github.com/perfectsense/brightspot-js-feature-detect",
   "keywords": [
     "brightspot",
     "jquery"
   ],
   "license": "MIT",
-  "name": "bsp-useragent",
+  "name": "bsp-feature-detect",
   "version": "0.0.2"
 }

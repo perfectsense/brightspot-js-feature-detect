@@ -9,7 +9,7 @@
     "jquery": ">=1.7.0",
     "bsp-utils": ">=1.0.0"
   },
-  "homepage": "https://github.com/perfectsense/brightspot-js-useragent",
+  "homepage": "https://github.com/perfectsense/brightspot-js-feature-detect",
   "ignore": ["demo","Gruntfile.js","package.json",".gitignore"],
   "keywords": [
     "brightspot",
@@ -17,9 +17,8 @@
   ],
   "license": "MIT",
   "main": [
-    "src/js/bsp-useragent.js",
-    "src/js/bsp-useragent-plugin.js"
+    "src/js/bsp-feature-detect.js"
   ],
-  "name": "bsp-useragent",
+  "name": "bsp-feature-detect",
   "version": "0.0.2"
 }
