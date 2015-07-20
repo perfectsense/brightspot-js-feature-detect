@@ -1,4 +1,4 @@
-import ua from 'bsp-useragent';
+import detect from 'bsp-feature-detect';
 
 var output = document.getElementById('output');
 
@@ -8,5 +8,5 @@ function writeMessage(msg) {
 	output.appendChild(div);
 }
 
-writeMessage('isTouchDevice = ' + ua.isTouchDevice);
-writeMessage('currentBreakpoint = ' + ua.currentBreakpoint);
+writeMessage('isTouchDevice = ' + detect.isTouchDevice);
+writeMessage('currentBreakpoint = ' + detect.currentBreakpoint);

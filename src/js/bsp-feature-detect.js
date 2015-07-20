@@ -1,6 +1,6 @@
 var bodyEle = document.querySelector('body');
 
-class BspUserAgent {
+class BspFeatureDetect {
 	/**
 	 * isTouchDevice is a static value, so set it once on
 	 * init with detectIsTouchDevice
@@ -34,4 +34,4 @@ class BspUserAgent {
 }
 
 /** exports single instance */
-export default new BspUserAgent();
+export default new BspFeatureDetect();
