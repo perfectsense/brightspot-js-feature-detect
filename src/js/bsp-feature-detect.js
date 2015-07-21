@@ -1,6 +1,13 @@
 var bodyEle = document.querySelector('body');
 
-class BspFeatureDetect {
+export class BspFeatureDetect {
+	/**
+	 * On init, just need to do static var detection
+	 */
+	constructor() {
+		this.detectIsTouchDevice();
+	}
+
 	/**
 	 * isTouchDevice is a static value, so set it once on
 	 * init with detectIsTouchDevice
@@ -12,7 +19,7 @@ class BspFeatureDetect {
 		this._isTouchDevice = value;
 	}
 	detectIsTouchDevice() { // @see: http://stackoverflow.com/questions/4817029/whats-the-best-way-to-detect-a-touch-screen-device-using-javascript
-		var msGesture = window.navigator && window.navigator.msPointerEnabled && window.MSGesture;
+		let msGesture = window.navigator && window.navigator.msPointerEnabled && window.MSGesture;
 		this.isTouchDevice = (( "ontouchstart" in window ) || msGesture || window.DocumentTouch && document instanceof DocumentTouch);
 	}
 
@@ -24,13 +31,6 @@ class BspFeatureDetect {
 		return window.getComputedStyle(bodyEle, ':before').getPropertyValue('content').replace(/\"/g, '').replace(/\'/g, '');
 	}
 	set currentBreakpoint(bp) {} // can't have a getter without a setter
-
-	/**
-	 * On init, just need to do static var detection
-	 */
-	constructor() {
-		this.detectIsTouchDevice();
-	}
 }
 
 /** exports single instance */
