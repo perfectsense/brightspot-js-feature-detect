@@ -3,7 +3,7 @@ System.config({
   map: {
   	'babel': '/assets/node/babel-core/browser.js',
   	'bsp-utils': '/assets/bower/bsp-utils/bsp-utils.js',
-  	'bsp-feature-detect': '/assets/js/bsp-feature-detect.js',
+  	'bspFeatureDetect': '/assets/js/BspFeatureDetect.js',
   	'jquery': '/assets/bower/jquery/dist/jquery.js'
   },
   transpiler: 'babel'

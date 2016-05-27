@@ -5,7 +5,7 @@
 		<style>
 			/** https://www.lullabot.com/articles/importing-css-breakpoints-into-javascript */
 			body:before {
-			  content: "smartphone";
+			  content: "mobile";
 			  display: none; /* Prevent from displaying. */
 			}
 			@media (min-width: 700px) {
@@ -28,7 +28,6 @@
 		<script src="/assets/node/systemjs/dist/system.js"></script>
 		<script src="config.js"></script>
 		<script>
-			System.import('/assets/js/bsp-feature-detect');
 			System.import('tests');
 		</script>
 
