@@ -17,8 +17,8 @@
   ],
   "license": "MIT",
   "main": [
-    "src/js/bsp-feature-detect.js"
+    "src/js/BspFeatureDetect.js"
   ],
   "name": "bsp-feature-detect",
-  "version": "0.0.2"
+  "version": "1.0.0"
 }
